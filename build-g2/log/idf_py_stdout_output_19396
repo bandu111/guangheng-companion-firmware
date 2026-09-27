@@ -1,0 +1,192 @@
+Command: ninja all
+[1/14] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\ESPProject\guangheng_energy_companion\build-g2\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/ESPProject/guangheng_energy_companion/build-g2/bootloader/bootloader.bin"
+Bootloader binary size 0x5160 bytes. 0x2ea0 bytes (36%) free.
+[2/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gh_model.c.obj
+[3/14] No install step for 'bootloader'
+[4/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gh_snapshot_parser.c.obj
+[5/14] Completed 'bootloader'
+[6/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gh_app.c.obj
+[7/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gh_ble_provisioning.c.obj
+[8/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gh_ui.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/gh_ui.c.obj 
+D:\Espressif\tools\xtensa-esp-elf\esp-14.2.0_20260121\xtensa-esp-elf\bin\xtensa-esp32s3-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.5.5\" -DLV_CONF_INCLUDE_SIMPLE -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/ESPProject/guangheng_energy_companion/build-g2/config -ID:/ESPProject/guangheng_energy_companion/main/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib/platform_include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/config/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/config/include/freertos -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/config/xtensa/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/FreeRTOS-Kernel/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos/esp_additions/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hw_support/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hw_support/include/soc -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hw_support/include/soc/esp32s3 -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hw_support/dma/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hw_support/ldo/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hw_support/debug_probe/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hw_support/mspi_timing_tuning/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hw_support/mspi_timing_tuning/tuning_scheme_impl/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hw_support/power_supply/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hw_support/port/esp32s3/. -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hw_support/port/esp32s3/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/. -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hw_support/mspi_timing_tuning/port/esp32s3/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/heap/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/heap/tlsf -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/log/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/soc/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/soc/esp32s3 -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/soc/esp32s3/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/soc/esp32s3/register -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/hal/platform_port/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/hal/esp32s3/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/hal/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/include/esp32s3 -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3 -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_common/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/soc -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system/port/include/private -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/esp32s3/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa/deprecated_include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/lwip/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/lwip/include/apps -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/lwip/include/apps/sntp -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/lwip/lwip/src/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/lwip/port/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/lwip/port/freertos/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/lwip/port/esp32xx/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/lwip/port/esp32xx/include/arch -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/lwip/port/esp32xx/include/sys -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_event/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_i2c/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_i2s/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_http_client/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_psram/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_psram/device/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_psram/xip_impl/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/spi_flash/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_wifi/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_wifi/include/local -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_wifi/wifi_apps/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_wifi/wifi_apps/nan_app/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_phy/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_phy/esp32s3/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_netif/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_timer/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/json/cJSON -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/mbedtls/port/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/mbedtls/mbedtls/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/mbedtls/mbedtls/library -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/mbedtls/esp_crt_bundle/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/mbedtls/mbedtls/3rdparty/everest/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/mbedtls/mbedtls/3rdparty/p256-m -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/nvs_flash/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_partition/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/common/osi/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/common/api/include/api -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/common/btc/profile/esp/blufi/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/common/btc/profile/esp/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/common/hci_log/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/common/ble_log/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/common/ble_log/deprecated/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/common/tinycrypt/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/common/tinycrypt/port -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/include/esp32c3/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/esp-hci/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/ans/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/bas/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/dis/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/gap/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/gatt/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/hr/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/htp/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/ias/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/ipss/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/lls/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/prox/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/cts/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/tps/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/hid/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/sps/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/cte/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/util/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/store/ram/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/store/config/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/host/services/ras/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/porting/nimble/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/port/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/nimble/transport/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/porting/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/bt/host/nimble/nimble/porting/npl/freertos/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_spi/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_pm/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_gpio/include -ID:/ESPProject/guangheng_energy_companion/managed_components/waveshare__esp32_s3_touch_amoled_1_8/include -ID:/ESPProject/guangheng_energy_companion/managed_components/waveshare__esp32_s3_touch_amoled_1_8/include/bsp -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_sdmmc/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/sdmmc/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_lcd/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_lcd/interface -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_lcd/rgb/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/deprecated -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/i2c/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/touch_sensor/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/twai/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/driver/touch_sensor/esp32s3/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_ringbuf/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_pcnt/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_gptimer/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_mcpwm/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_ana_cmpr/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_sdspi/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_sdio/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_dac/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_rmt/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_tsens/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_sdm/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_uart/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/vfs/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_ledc/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_parlio/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_usb_serial_jtag/include -ID:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_twai/include -ID:/ESPProject/guangheng_energy_companion/managed_components/espressif__esp_codec_dev/include -ID:/ESPProject/guangheng_energy_companion/managed_components/espressif__esp_codec_dev/interface -ID:/ESPProject/guangheng_energy_companion/managed_components/espressif__esp_codec_dev/device/include -ID:/ESPProject/guangheng_energy_companion/managed_components/espressif__esp_io_expander_tca9554/include -ID:/ESPProject/guangheng_energy_companion/managed_components/espressif__esp_io_expander/include -ID:/ESPProject/guangheng_energy_companion/managed_components/espressif__esp_lvgl_port/include -ID:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl -ID:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/src -ID:/ESPProject/guangheng_energy_companion/managed_components -ID:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/examples -ID:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/demos -ID:/ESPProject/guangheng_energy_companion/managed_components/waveshare__qmi8658/include -ID:/ESPProject/guangheng_energy_companion/managed_components/waveshare__pcf85063a/include -ID:/ESPProject/guangheng_energy_companion/managed_components/espressif__esp_lcd_touch_cst816s/include -ID:/ESPProject/guangheng_energy_companion/managed_components/espressif__esp_lcd_touch/include -ID:/ESPProject/guangheng_energy_companion/managed_components/espressif__esp_lcd_touch_ft5x06/include @"D:/ESPProject/guangheng_energy_companion/build-g2/toolchain/cflags" -fdiagnostics-color=always -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -O2 -fmacro-prefix-map=D:/ESPProject/guangheng_energy_companion=. -fmacro-prefix-map=D:/Espressif/frameworks/esp-idf-v5.5.5=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/gh_ui.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\gh_ui.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/gh_ui.c.obj -c D:/ESPProject/guangheng_energy_companion/main/gh_ui.c
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c: In function 'make_card':
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:113:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  113 |     lv_obj_clear_flag(card, LV_OBJ_FLAG_SCROLLABLE);
+      |     ^~~~~~~~~~~~~~~~~
+In file included from D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/lvgl.h:21,
+                 from D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/lvgl.h:1,
+                 from D:/ESPProject/guangheng_energy_companion/managed_components/waveshare__esp32_s3_touch_amoled_1_8/include/bsp/esp32_s3_touch_amoled_1_8.h:14,
+                 from D:/ESPProject/guangheng_energy_companion/managed_components/waveshare__esp32_s3_touch_amoled_1_8/include/bsp/esp-bsp.h:2,
+                 from D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:7:
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c: In function 'create_pairing_page':
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:137:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  137 |     lv_obj_clear_flag(s_pairing_page, LV_OBJ_FLAG_SCROLLABLE);
+      |     ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:153:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  153 |     lv_obj_clear_flag(halo, LV_OBJ_FLAG_SCROLLABLE);
+      |     ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:172:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  172 |     lv_obj_clear_flag(code_card, LV_OBJ_FLAG_SCROLLABLE);
+      |     ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:181:9: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  181 |         lv_obj_clear_flag(digit_box, LV_OBJ_FLAG_SCROLLABLE);
+      |         ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c: In function 'create_ble_security_page':
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:206:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  206 |     lv_obj_clear_flag(s_ble_security_page, LV_OBJ_FLAG_SCROLLABLE);
+      |     ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:222:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  222 |     lv_obj_clear_flag(halo, LV_OBJ_FLAG_SCROLLABLE);
+      |     ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:241:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  241 |     lv_obj_clear_flag(code_card, LV_OBJ_FLAG_SCROLLABLE);
+      |     ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:250:9: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  250 |         lv_obj_clear_flag(digit_box, LV_OBJ_FLAG_SCROLLABLE);
+      |         ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c: In function 'make_page':
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:312:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  312 |     lv_obj_clear_flag(page, LV_OBJ_FLAG_SCROLLABLE);
+      |     ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:313:5: warning: 'lv_obj_add_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, true). [-Wdeprecated-declarations]
+  313 |     lv_obj_add_flag(page, LV_OBJ_FLAG_HIDDEN);
+      |     ^~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:239:6: note: declared here
+  239 | void lv_obj_add_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c: In function 'create_progress_page':
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:338:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  338 |     lv_obj_clear_flag(halo, LV_OBJ_FLAG_SCROLLABLE);
+      |     ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c: In function 'show_screen':
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:351:9: warning: 'lv_obj_add_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, true). [-Wdeprecated-declarations]
+  351 |         if (s_pages[i] != NULL) lv_obj_add_flag(s_pages[i], LV_OBJ_FLAG_HIDDEN);
+      |         ^~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:239:6: note: declared here
+  239 | void lv_obj_add_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:353:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  353 |     lv_obj_clear_flag(s_pages[route], LV_OBJ_FLAG_HIDDEN);
+      |     ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c: In function 'create_ambient_page':
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:417:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  417 |     lv_obj_clear_flag(halo, LV_OBJ_FLAG_SCROLLABLE);
+      |     ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:420:56: error: 'lv_font_montserrat_40' undeclared (first use in this function); did you mean 'lv_font_montserrat_20'?
+  420 |     s_primary_value = make_text(halo, "--", 0xffffff, &lv_font_montserrat_40);
+      |                                                        ^~~~~~~~~~~~~~~~~~~~~
+      |                                                        lv_font_montserrat_20
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:420:56: note: each undeclared identifier is reported only once for each function it appears in
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:432:9: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  432 |         lv_obj_clear_flag(card, LV_OBJ_FLAG_SCROLLABLE);
+      |         ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c: In function 'create_device_page':
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:522:9: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  522 |         lv_obj_clear_flag(card, LV_OBJ_FLAG_SCROLLABLE);
+      |         ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c: In function 'create_offline_page':
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:543:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  543 |     lv_obj_clear_flag(halo, LV_OBJ_FLAG_SCROLLABLE);
+      |     ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:544:55: error: 'lv_font_montserrat_40' undeclared (first use in this function); did you mean 'lv_font_montserrat_20'?
+  544 |     lv_obj_t *mark = make_text(halo, "--", 0x9cadbb, &lv_font_montserrat_40);
+      |                                                       ^~~~~~~~~~~~~~~~~~~~~
+      |                                                       lv_font_montserrat_20
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c: In function 'create_ui':
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:554:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  554 |     lv_obj_clear_flag(screen, LV_OBJ_FLAG_SCROLLABLE);
+      |     ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:555:5: warning: 'lv_obj_add_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, true). [-Wdeprecated-declarations]
+  555 |     lv_obj_add_flag(screen, LV_OBJ_FLAG_CLICKABLE);
+      |     ^~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:239:6: note: declared here
+  239 | void lv_obj_add_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:575:5: warning: 'lv_obj_add_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, true). [-Wdeprecated-declarations]
+  575 |     lv_obj_add_flag(s_pairing_page, LV_OBJ_FLAG_HIDDEN);
+      |     ^~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:239:6: note: declared here
+  239 | void lv_obj_add_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:577:5: warning: 'lv_obj_add_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, true). [-Wdeprecated-declarations]
+  577 |     lv_obj_add_flag(s_ble_security_page, LV_OBJ_FLAG_HIDDEN);
+      |     ^~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:239:6: note: declared here
+  239 | void lv_obj_add_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c: In function 'gh_ui_show_ble_passkey':
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:760:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  760 |     lv_obj_clear_flag(s_ble_security_page, LV_OBJ_FLAG_HIDDEN);
+      |     ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c: In function 'gh_ui_hide_ble_passkey':
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:768:5: warning: 'lv_obj_add_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, true). [-Wdeprecated-declarations]
+  768 |     lv_obj_add_flag(s_ble_security_page, LV_OBJ_FLAG_HIDDEN);
+      |     ^~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:239:6: note: declared here
+  239 | void lv_obj_add_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c: At top level:
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:71:20: warning: 'agent_state_label' defined but not used [-Wunused-function]
+   71 | static const char *agent_state_label(gh_agent_state_t state)
+      |                    ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:51:20: warning: 'connection_state_label' defined but not used [-Wunused-function]
+   51 | static const char *connection_state_label(gh_connection_state_t state)
+      |                    ^~~~~~~~~~~~~~~~~~~~~~
+[9/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gh_backend.c.obj
+ninja: build stopped: subcommand failed.

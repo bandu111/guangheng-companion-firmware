@@ -1,0 +1,75 @@
+menu "GuangHeng Energy Companion"
+
+config GH_BACKEND_BASE_URL
+    string "GuangHeng Companion API base URL"
+    default "https://43.155.204.194"
+    help
+        HTTPS endpoint for GuangHeng Control Plane. Do not enter a Home Assistant,
+        MCP, Hermes, or model-provider endpoint here.
+
+config GH_ALLOW_INSECURE_HTTP
+    bool "Allow HTTP for private demo environment"
+    default n
+    help
+        Development-only switch. Device credentials and approvals require HTTPS
+        unless this is explicitly enabled for a controlled hackathon network.
+
+config GH_SNTP_SERVER
+    string "SNTP server used before production TLS"
+    default "pool.ntp.org"
+    help
+        The first HTTPS request is blocked until SNTP establishes a trustworthy
+        system time. TLS verification is never disabled to bypass time errors.
+
+config GH_WIFI_SSID
+    string "Wi-Fi SSID"
+    default ""
+
+config GH_WIFI_PASSWORD
+    string "Wi-Fi password"
+    default ""
+
+config GH_DEVICE_ID
+    string "Companion device identifier"
+    default "gh-companion-dev-01"
+
+config GH_HALL_ENABLED
+    bool "Enable external TMAG5273"
+    default n
+
+config GH_HALL_I2C_PORT
+    int "TMAG5273 I2C port"
+    depends on GH_HALL_ENABLED
+    default 0
+    range 0 1
+
+config GH_HALL_I2C_SDA
+    int "TMAG5273 SDA GPIO"
+    depends on GH_HALL_ENABLED
+    default -1
+
+config GH_HALL_I2C_SCL
+    int "TMAG5273 SCL GPIO"
+    depends on GH_HALL_ENABLED
+    default -1
+
+config GH_HALL_I2C_ADDRESS
+    hex "TMAG5273 7-bit address"
+    depends on GH_HALL_ENABLED
+    default 0x35
+    range 0x08 0x77
+
+config GH_APPROVAL_HOLD_MS
+    int "Approval long-press duration (ms)"
+    default 1400
+    range 1200 1500
+
+config GH_BOOT_AUDIO_HIL
+    bool "Play speaker tone and capture microphone during boot HIL"
+    default n
+    help
+        Manufacturing/HIL-only check. Keep disabled in normal firmware so an
+        ESP32-S3 reboot does not emit a speaker tone or delay startup. Runtime
+        voice capture still initializes the real ES8311/I2S path.
+
+endmenu

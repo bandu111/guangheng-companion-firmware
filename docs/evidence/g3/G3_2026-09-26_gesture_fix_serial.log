@@ -1,0 +1,10 @@
+I (95) boot:  6 coredump         Unknown data     01 03 00ff0000I (12203) wifi:<ba-add>idx:0 (ifx:0, 34:f7:16:a6:36:ea), tid:0, ssn:3, winSize:64
+I (12231) gh_app: ESP32-S3 SNTP time synchronized; UTC=2026-09-25T18:48:26Z
+I (12235) gh_ui: ESP32-S3 UI route=BACKEND_CONNECTING canvas=368x448
+I (14020) esp-x509-crt-bundle: Certificate validated
+I (14863) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+I (14865) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false
+I (14874) gh_ui: ESP32-S3 UI route=AMBIENT canvas=368x448
+I (31739) esp-x509-crt-bundle: Certificate validated
+I (32581) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+I (32583) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false

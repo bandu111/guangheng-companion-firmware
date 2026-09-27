@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\ESPProject\guangheng_energy_companion\tests\gh_model_test.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ESPProject\guangheng_energy_companion\main\gh_model.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ESPProject\guangheng_energy_companion\main\gh_lift_detector.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ESPProject\guangheng_energy_companion\main\gh_snapshot_parser.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Espressif\frameworks\esp-idf-v5.5.5\components\json\cJSON\cJSON.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\ESPProject\guangheng_energy_companion\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{22DC4D4D-7FB5-3E24-A726-84AFED42BC8B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

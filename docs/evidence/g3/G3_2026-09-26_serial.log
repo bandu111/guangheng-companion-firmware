@@ -1,0 +1,389 @@
+--- WARNING: GDB cannot open serial ports accessed as COMx
+
+--- NOTE: Using \\.\COM10 instead...
+
+--- esp-idf-monitor 1.10.0 on \\.\COM10 115200
+
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+
+Executing action: monitor
+Running idf_monitor in directory D:\ESPProject\guangheng_energy_companion
+Executing "D:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM10 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\ESPProject\guangheng_energy_companion\build-g2\guangheng_energy_companion.elf D:\ESPProject\guangheng_energy_companion\build-g2\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'D:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py' '-B' 'build-g2' '-p' 'COM10'"...
+ESP-ROM:esp32s3-20210327
+
+Build:Mar 27 2021
+
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+
+Saved PC:0x420b4a38
+
+--- 0x420b4a38: add32 at D:/Espressif/frameworks/esp-idf-v5.5.5/components/mbedtls/mbedtls/library/ecp_curves.c:4937(inlined by) ecp_mod_p384 at D:/Espressif/frameworks/esp-idf-v5.5.5/components/mbedtls/mbedtls/library/ecp_curves.c:5095(inlined by) ecp_mod_p384 at D:/Espressif/frameworks/esp-idf-v5.5.5/components/mbedtls/mbedtls/library/ecp_curves.c:5073
+
+SPIWP:0xee
+
+mode:DIO, clock div:1
+
+load:0x3fce2820,len:0x14f0
+
+load:0x403c8700,len:0xd24
+
+--- 0x403c8700: _stext at ??:?
+
+load:0x403cb700,len:0x2eec
+
+entry 0x403c8924
+
+--- 0x403c8924: call_start_cpu0 at D:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject/main/bootloader_start.c:27
+
+I (24) boot: ESP-IDF v5.5.5 2nd stage bootloader
+
+I (24) boot: compile time Sep 26 2026 01:53:03
+
+I (25) boot: Multicore bootloader
+
+I (25) boot: chip revision: v0.2
+
+I (28) boot: efuse block revision: v1.4
+
+I (31) boot.esp32s3: Boot SPI Speed : 80MHz
+
+I (35) boot.esp32s3: SPI Mode       : DIO
+
+I (39) boot.esp32s3: SPI Flash Size : 16MB
+
+I (43) boot: Enabling RNG early entropy source...
+
+I (47) boot: Partition Table:
+
+I (50) boot: ## Label            Usage          Type ST Offset   Length
+
+I (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000
+
+I (63) boot:  1 otadata          OTA data         01 00 0000f000 00002000
+
+I (69) boot:  2 phy_init         RF data          01 01 00011000 00001000
+
+I (76) boot:  3 ota_0            OTA app          00 10 00020000 00600000
+
+I (82) boot:  4 ota_1            OTA app          00 11 00620000 00600000
+
+I (89) boot:  5 storage          Unknown data     01 82 00c20000 003d0000
+
+I (95) boot:  6 coredump         Unknown data     01 03 00ff0000 00010000
+
+I (102) boot: End of partition table
+
+I (105) esp_image: segment 0: paddr=00020020 vaddr=3c140020 size=1ada5ch (1759836) map
+
+I (434) esp_image: segment 1: paddr=001cda84 vaddr=3fca3b00 size=02594h (  9620) load
+
+I (436) esp_image: segment 2: paddr=001d0020 vaddr=42000020 size=13c570h (1295728) map
+
+I (674) esp_image: segment 3: paddr=0030c598 vaddr=3fca6094 size=0351ch ( 13596) load
+
+I (677) esp_image: segment 4: paddr=0030fabc vaddr=40374000 size=1fa80h (129664) load
+
+I (707) esp_image: segment 5: paddr=0032f544 vaddr=50000000 size=00020h (    32) load
+
+I (720) boot: Loaded app from partition at offset 0x20000
+
+I (720) boot: Disabling RNG early entropy source...
+
+I (730) octal_psram: vendor id    : 0x0d (AP)
+
+I (730) octal_psram: dev id       : 0x02 (generation 3)
+
+I (731) octal_psram: density      : 0x03 (64 Mbit)
+
+I (733) octal_psram: good-die     : 0x01 (Pass)
+
+I (737) octal_psram: Latency      : 0x01 (Fixed)
+
+I (741) octal_psram: VCC          : 0x01 (3V)
+
+I (745) octal_psram: SRF          : 0x01 (Fast Refresh)
+
+I (750) octal_psram: BurstType    : 0x01 (Hybrid Wrap)
+
+I (755) octal_psram: BurstLen     : 0x01 (32 Byte)
+
+I (760) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)
+
+I (765) octal_psram: DriveStrength: 0x00 (1/1)
+
+I (769) MSPI Timing: Enter psram timing tuning
+
+I (774) esp_psram: Found 8MB PSRAM device
+
+I (777) esp_psram: Speed: 80MHz
+
+I (780) cpu_start: Multicore app
+
+I (1196) esp_psram: SPI SRAM memory test OK
+
+I (1204) cpu_start: GPIO 44 and 43 are used as console UART I/O pins
+
+I (1205) cpu_start: Pro cpu start user code
+
+I (1205) cpu_start: cpu freq: 160000000 Hz
+
+I (1207) app_init: Application information:
+
+I (1211) app_init: Project name:     guangheng_energy_companion
+
+I (1216) app_init: App version:      1
+
+I (1220) app_init: Compile time:     Sep 26 2026 02:13:36
+
+I (1225) app_init: ELF file SHA256:  eeb054115...
+
+I (1229) app_init: ESP-IDF:          v5.5.5
+
+I (1233) efuse_init: Min chip rev:     v0.0
+
+I (1237) efuse_init: Max chip rev:     v0.99 
+
+I (1241) efuse_init: Chip rev:         v0.2
+
+I (1245) heap_init: Initializing. RAM available for dynamic allocation:
+
+I (1251) heap_init: At 3FCBEB68 len 0002ABA8 (170 KiB): RAM
+
+I (1257) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM
+
+I (1262) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM
+
+I (1267) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM
+
+I (1273) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator
+
+I (1280) spi_flash: detected chip: generic
+
+I (1283) spi_flash: flash io: dio
+
+I (1286) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+
+I (1293) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+
+I (1308) main_task: Started on CPU0
+
+I (1311) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations
+
+I (1319) main_task: Calling app_main()
+
+I (1322) gh_hardware: ESP32-S3 Hardware-in-the-loop | ESP32-S3 Detected | PASS | model=ESP32-S3 revision=0.2 cores=2
+
+I (1333) gh_hardware: ESP32-S3 Hardware-in-the-loop | ESP32-S3 Flash | PASS | size=16777216 bytes (16 MB)
+
+I (1342) gh_hardware: ESP32-S3 Hardware-in-the-loop | ESP32-S3 PSRAM | PASS | size=8388608 bytes (8 MB)
+
+I (1351) gh_hardware: ESP32-S3 Hardware-in-the-loop | ESP32-S3 MAC | PASS | 90:70:69:FE:A9:3C
+
+I (1382) gh_main: Starting GuangHeng Energy Companion on Waveshare ESP32-S3-Touch-AMOLED-1.8
+
+I (1385) LVGL: Starting LVGL task
+
+I (1386) ESP32-S3-Touch-AMOLED-1.8: Initialize SPI bus
+
+I (1388) co5300: version: 2.2.0
+
+I (1390) co5300_spi: LCD panel create success, version: 2.2.0
+
+W (1476) co5300_spi: The 3Ah command has been used and will be overwritten by external initialization sequence
+
+W (1625) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs
+
+I (1630) ESP32-S3-Touch-AMOLED-1.8: Touch CST816S 0x15 found
+
+I (1635) CST816S: IC id: 183
+
+I (1638) gh_hardware: ESP32-S3 Hardware-in-the-loop | Board Variant Signal | PASS | touch=CST816S (V2-family signal); physical PCB revision label still required
+
+I (2287) gh_ui: ESP32-S3 Hardware-in-the-loop | ESP32-S3 AMOLED First Frame | PASS | controller=CO5300 brightness=100
+
+I (2374) QMI8658: QMI8658 initialized successfully
+
+I (2497) gh_peripherals: ESP32-S3 Hardware-in-the-loop | ESP32-S3 QMI8658 Read | PASS | address=0x6B who_am_i=0x05 accel=3.541,0.907,-9.793 gyro=7.508,4.867,4.281 temp=40.03 timestamp=9
+
+I (2503) gh_peripherals: ESP32-S3 Hardware-in-the-loop | ESP32-S3 AXP2101 Read | PASS | address=0x34 chip_id=0x4A mode=read-only
+
+I (2514) PCF85063A: PCF85063A initialized successfully
+
+I (3619) gh_peripherals: ESP32-S3 Hardware-in-the-loop | ESP32-S3 PCF85063 Read | PASS | address=0x51 time=2050-01-10T00:10:44 ticking=true
+
+I (3629) ES8311: Work in Slave mode
+
+E (3632) i2s_common: i2s_channel_disable(1262): the channel has not been enabled yet
+
+E (3633) i2s_common: i2s_channel_disable(1262): the channel has not been enabled yet
+
+I (3639) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (3647) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+
+I (3654) I2S_IF: STD: RX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1
+
+I (3663) I2S_IF: STD: RX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6
+
+I (3687) Adev_Codec: Open codec device OK
+
+I (3689) gh_audio: ESP32-S3 Hardware-in-the-loop | ESP32-S3 ES8311 Codec | PASS | address=0x30 sample_rate=16000 mode=full-duplex
+
+I (4690) gh_audio: ESP32-S3 Hardware-in-the-loop | ESP32-S3 Board Microphone Capture | PASS | samples=16128 min=-32768 max=31765 span=64533 mean_absolute=15935
+
+I (4693) gh_audio: ESP32-S3 Hardware-in-the-loop | ESP32-S3 Board Speaker Stream | PASS | frequency=880Hz volume=45 bytes=32256 audible_confirmation=pending
+
+I (4709) pp: pp rom version: e7ae62f
+
+I (4711) net80211: net80211 rom version: e7ae62f
+
+I (4716) wifi:wifi driver task: 3fcd40a4, prio:23, stack:6656, core=0
+
+I (4731) wifi:wifi firmware version: b9f67df
+
+I (4731) wifi:wifi certification version: v7.0
+
+I (4731) wifi:config NVS flash: enabled
+
+I (4733) wifi:config nano formatting: disabled
+
+I (4737) wifi:Init data frame dynamic rx buffer num: 32
+
+I (4742) wifi:Init static rx mgmt buffer num: 5
+
+I (4746) wifi:Init management short buffer num: 32
+
+I (4751) wifi:Init dynamic tx buffer num: 32
+
+I (4755) wifi:Init static tx FG buffer num: 2
+
+I (4759) wifi:Init static rx buffer size: 1600
+
+I (4763) wifi:Init static rx buffer num: 10
+
+I (4767) wifi:Init dynamic rx buffer num: 32
+
+I (4772) wifi_init: rx ba win: 6
+
+I (4774) wifi_init: accept mbox: 6
+
+I (4777) wifi_init: tcpip mbox: 32
+
+I (4780) wifi_init: udp mbox: 6
+
+I (4783) wifi_init: tcp mbox: 6
+
+I (4786) wifi_init: tcp tx win: 5760
+
+I (4789) wifi_init: tcp rx win: 5760
+
+I (4792) wifi_init: tcp mss: 1440
+
+I (4795) wifi_init: WiFi IRAM OP enabled
+
+I (4799) wifi_init: WiFi RX IRAM OP enabled
+
+I (4805) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10
+
+I (4846) wifi:mode : sta (90:70:69:fe:a9:3c)
+
+I (4847) wifi:enable tsf
+
+I (4848) BLE_INIT: BT controller compile version [51d9dfd]
+
+I (4851) BLE_INIT: Using main XTAL as clock source
+
+I (4852) BLE_INIT: Feature Config, ADV:1, BLE_50:1, DTM:1, SCAN:1, CCA:0, SMP:1, CONNECT:1
+
+I (4858) wifi:new:<8,2>, old:<1,0>, ap:<255,255>, sta:<8,2>, prof:1, snd_ch_cfg:0x0
+
+I (4867) wifi:state: init -> auth (0xb0)
+
+I (4872) BLE_INIT: Bluetooth MAC: 90:70:69:fe:a9:3e
+
+I (4895) NimBLE: GAP procedure initiated: stop advertising.
+
+
+
+I (4896) wifi:state: auth -> assoc (0x0)
+
+I (4898) NimBLE: GAP procedure initiated: stop advertising.
+
+
+
+I (4901) NimBLE: GAP procedure initiated: advertise; 
+
+I (4904) NimBLE: disc_mode=2
+
+I (4906) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0
+
+I (4915) NimBLE: 
+
+
+
+I (4918) gh_ble: ESP32-S3 encrypted BLE provisioning available
+
+I (4923) main_task: Returned from app_main()
+
+I (4925) wifi:I (4924) gh_app: ESP32-S3 Hardware-in-the-loop | ESP32-S3 AXP2101 Runtime Power | PASS | present=false percentage=unavailable voltage=unavailable charging=false
+
+state: assoc -> run (0x10)
+
+I (5072) wifi:connected with 607, aid = 21, channel 8, 40D, bssid = 34:f7:16:a6:36:ea
+
+I (5073) wifi:security: WPA2-PSK, phy: bgn, rssi: -64, cipher(pairwise:0x3, group:0x3), pmf:0
+
+I (5081) wifi:pm start, type: 1
+
+
+
+I (5081) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+
+I (5089) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000
+
+I (5169) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+
+W (5942) gh_app: Secure network not ready: ESP_ERR_TIMEOUT
+
+W (5942) gh_app: ESP32-S3 snapshot stale=true last_successful_sync_at=0
+
+I (6482) esp_netif_handlers: sta ip: 192.168.2.9, mask: 255.255.255.0, gw: 192.168.2.1
+
+I (6483) gh_app: ESP32-S3 Wi-Fi connected; IPv4=192.168.2.9
+
+I (10947) gh_app: ESP32-S3 SNTP time ready; UTC=2026-09-25T18:30:40Z
+
+I (11040) wifi:<ba-add>idx:0 (ifx:0, 34:f7:16:a6:36:ea), tid:0, ssn:3, winSize:64
+
+I (12817) esp-x509-crt-bundle: Certificate validated
+
+I (13672) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+
+I (13674) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false
+
+I (30472) esp-x509-crt-bundle: Certificate validated
+
+I (31289) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+
+I (31291) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false
+
+I (48049) esp-x509-crt-bundle: Certificate validated
+
+I (48914) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+
+I (48916) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false
+
+I (65671) esp-x509-crt-bundle: Certificate validated
+
+I (66511) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+
+I (66513) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false
+
+I (83313) esp-x509-crt-bundle: Certificate validated
+
+I (84130) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+
+I (84132) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false
+
+
+

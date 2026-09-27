@@ -1,0 +1,74 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=D:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=0 D:\ESPProject\guangheng_energy_companion
+-- IDF_TARGET is not set, guessed 'esp32s3' from sdkconfig 'D:/ESPProject/guangheng_energy_companion/sdkconfig'
+-- Found Git: C:/Program Files/Git/cmd/git.exe (found version "2.49.0.windows.1")
+-- Component directory D:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_blockdev does not contain a CMakeLists.txt file. No component will be added
+-- Minimal build - OFF
+-- The C compiler identification is GNU 14.2.0
+-- The CXX compiler identification is GNU 14.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Users/bandu/.rustup/toolchains/esp/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/bandu/.rustup/toolchains/esp/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/bandu/.rustup/toolchains/esp/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32s3
+NOTICE: Skipping optional dependency: espressif/usb
+NOTICE: Processing 15 dependencies:
+NOTICE: [1/15] espressif/cmake_utilities (0.5.3)
+NOTICE: [2/15] espressif/esp_codec_dev (1.5.11)
+NOTICE: [3/15] espressif/esp_io_expander (1.2.1)
+NOTICE: [4/15] espressif/esp_io_expander_tca9554 (2.0.3)
+NOTICE: [5/15] espressif/esp_lcd_co5300 (2.2.0)
+NOTICE: [6/15] espressif/esp_lcd_panel_io_additions (1.0.1~1)
+NOTICE: [7/15] espressif/esp_lcd_touch (1.2.1)
+NOTICE: [8/15] espressif/esp_lcd_touch_cst816s (1.1.2)
+NOTICE: [9/15] espressif/esp_lcd_touch_ft5x06 (1.1.1)
+NOTICE: [10/15] espressif/esp_lvgl_port (2.9.0)
+NOTICE: [11/15] lvgl/lvgl (9.6.0~1)
+NOTICE: [12/15] waveshare/esp32_s3_touch_amoled_1_8 (2.0.3)
+NOTICE: [13/15] waveshare/pcf85063a (2.1.0)
+NOTICE: [14/15] waveshare/qmi8658 (2.0.1)
+NOTICE: [15/15] idf (5.5.5)
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5 SoCs
+NOTICE: Skipping optional dependency: espressif/usb
+-- Project sdkconfig file D:/ESPProject/guangheng_energy_companion/sdkconfig
+Loading defaults file D:/ESPProject/guangheng_energy_companion/sdkconfig.defaults...
+NOTICE: Skipping optional dependency: espressif/freetype
+NOTICE: Skipping optional dependency: espressif/libjpeg-turbo
+NOTICE: Skipping optional dependency: espressif/libpng
+NOTICE: Skipping optional dependency: espressif/lz4
+NOTICE: Skipping optional dependency: espressif/usb
+NOTICE: Processing 15 dependencies:
+NOTICE: [1/15] espressif/cmake_utilities (0.5.3)
+NOTICE: [2/15] espressif/esp_codec_dev (1.5.11)
+NOTICE: [3/15] espressif/esp_io_expander (1.2.1)
+NOTICE: [4/15] espressif/esp_io_expander_tca9554 (2.0.3)
+NOTICE: [5/15] espressif/esp_lcd_co5300 (2.2.0)
+NOTICE: [6/15] espressif/esp_lcd_panel_io_additions (1.0.1~1)
+NOTICE: [7/15] espressif/esp_lcd_touch (1.2.1)
+NOTICE: [8/15] espressif/esp_lcd_touch_cst816s (1.1.2)
+NOTICE: [9/15] espressif/esp_lcd_touch_ft5x06 (1.1.1)
+NOTICE: [10/15] espressif/esp_lvgl_port (2.9.0)
+NOTICE: [11/15] lvgl/lvgl (9.6.0~1)
+NOTICE: [12/15] waveshare/esp32_s3_touch_amoled_1_8 (2.0.3)
+NOTICE: [13/15] waveshare/pcf85063a (2.1.0)
+NOTICE: [14/15] waveshare/qmi8658 (2.0.1)
+NOTICE: [15/15] idf (5.5.5)
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5 SoCs
+NOTICE: Skipping optional dependency: espressif/freetype
+NOTICE: Skipping optional dependency: espressif/libjpeg-turbo
+NOTICE: Skipping optional dependency: espressif/libpng
+NOTICE: Skipping optional dependency: espressif/lz4
+NOTICE: Skipping optional dependency: espressif/usb
+-- Project sdkconfig file D:/ESPProject/guangheng_energy_companion/sdkconfig
+Loading defaults file D:/ESPProject/guangheng_energy_companion/sdkconfig.defaults...
+-- Compiler supported targets: xtensa-esp-elf
+-- Configuring incomplete, errors occurred!

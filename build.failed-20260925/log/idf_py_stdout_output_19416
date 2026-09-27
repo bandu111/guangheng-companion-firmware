@@ -1,0 +1,153 @@
+Command: D:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM10 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\ESPProject\guangheng_energy_companion\build\guangheng_energy_companion.elf D:\ESPProject\guangheng_energy_companion\build\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'D:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py' '-p' 'COM10'
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40384e1a
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x1668
+load:0x403c8700,len:0xed4
+load:0x403cb700,len:0x317c
+entry 0x403c8954
+[0;32mI (24) boot: ESP-IDF v5.5.4-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 26 2026 17:23:10[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (25) boot: efuse block revision: v1.4[0m
+[0;32mI (25) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (26) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (26) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (26) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (26) boot: Enabling RNG early entropy source...[0m
+[0;32mI (27) boot: Partition Table:[0m
+[0;32mI (27) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (27) boot:  0 nvsfactory       WiFi data        01 02 00009000 00032000[0m
+[0;32mI (27) boot:  1 nvs              WiFi data        01 02 0003b000 000d2000[0m
+[0;32mI (28) boot:  2 otadata          OTA data         01 00 0010d000 00002000[0m
+[0;32mI (28) boot:  3 phy_init         RF data          01 01 0010f000 00001000[0m
+[0;32mI (29) boot:  4 factory          factory app      00 00 00110000 00580000[0m
+[0;32mI (29) boot:  5 ota_0            OTA app          00 10 00690000 00300000[0m
+[0;32mI (30) boot:  6 assets           Unknown data     01 82 00990000 00300000[0m
+[0;32mI (30) boot:  7 storage          Unknown data     01 82 00c90000 00370000[0m
+[0;32mI (31) boot: End of partition table[0m
+[0;32mI (31) boot: Defaulting to factory image[0m
+[0;32mI (31) esp_image: segment 0: paddr=00110020 vaddr=3c180020 size=2d701ch (2977820) map[0m
+[0;32mI (473) esp_image: segment 1: paddr=003e7044 vaddr=3fca7800 size=06d4ch ( 27980) load[0m
+[0;32mI (478) esp_image: segment 2: paddr=003edd98 vaddr=40378000 size=02280h (  8832) load[0m
+[0;32mI (481) esp_image: segment 3: paddr=003f0020 vaddr=42000020 size=1782bch (1540796) map[0m
+[0;32mI (710) esp_image: segment 4: paddr=005682e4 vaddr=4037a280 size=1d4bch (119996) load[0m
+[0;32mI (733) esp_image: segment 5: paddr=005857a8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (745) boot: Loaded app from partition at offset 0x110000[0m
+[0;32mI (746) boot: Disabling RNG early entropy source...[0m
+[0;32mI (747) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (747) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (747) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (747) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (747) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (748) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (748) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (748) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (748) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (749) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (749) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (749) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (750) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (750) esp_psram: Speed: 80MHz[0m
+[0;32mI (922) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (1027) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (1027) cpu_start: Multicore app[0m
+[0;32mI (1157) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1165) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1166) cpu_start: Pro cpu start user code[0m
+[0;32mI (1166) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (1166) app_init: Application information:[0m
+[0;32mI (1166) app_init: Project name:     esp-brookesia[0m
+[0;32mI (1166) app_init: App version:      1[0m
+[0;32mI (1166) app_init: Compile time:     May 27 2026 09:39:19[0m
+[0;32mI (1166) app_init: ELF file SHA256:  61ddb2b25...[0m
+[0;32mI (1167) app_init: ESP-IDF:          v5.5.4-dirty[0m
+[0;32mI (1167) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1167) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1167) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1168) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1168) heap_init: At 3FCB4690 len 00035080 (212 KiB): RAM[0m
+[0;32mI (1168) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1168) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1169) esp_psram: Adding pool of 3712K of PSRAM memory to heap allocator[0m
+[0;32mI (1169) esp_psram: Adding pool of 35K of PSRAM memory gap generated due to end address alignment of drom to the heap allocator[0m
+[0;32mI (1170) spi_flash: detected chip: generic[0m
+[0;32mI (1170) spi_flash: flash io: qio[0m
+[0;32mI (1171) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1171) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1172) main_task: Started on CPU0[0m
+[0;32mI (1173) esp_psram: Reserving pool of 4K of internal memory for DMA/internal allocations[0m
+[0;32mI (1173) main_task: Calling app_main()[0m
+[0;32mI (1174) Main: Switch to partition factory[0m
+[0;32mI (1174) esp_image: segment 0: paddr=00110020 vaddr=3c180020 size=2d701ch (2977820) map[0m
+[0;32mI (1356) esp_image: segment 1: paddr=003e7044 vaddr=3fca7800 size=06d4ch ( 27980) [0m
+[0;32mI (1358) esp_image: segment 2: paddr=003edd98 vaddr=40378000 size=02280h (  8832) [0m
+[0;32mI (1359) esp_image: segment 3: paddr=003f0020 vaddr=42000020 size=1782bch (1540796) map[0m
+[0;32mI (1453) esp_image: segment 4: paddr=005682e4 vaddr=4037a280 size=1d4bch (119996) [0m
+[0;32mI (1461) esp_image: segment 5: paddr=005857a8 vaddr=50000000 size=00020h (    32) [0m
+[0;32mI (1701) ESP32-S3-Touch-AMOLED-1.8: Partition size: total: 3305921, used: 3129468[0m
+[0;32mI (1702) Main: SPIFFS mount successfully[0m
+[0;33mW (1702) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (1709) ES8311: Work in Slave mode[0m
+[0;32mI (1717) ES8311: Work in Slave mode[0m
+[0;32mI (1721) I2S_IF: Paired data: 0x3c45d1a0, current mode: record, paired in_enable: 0, paired out_enable: 0[0m
+[0;32mI (1721) I2S_IF: STD: RX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3[0m
+[0;32mI (1721) I2S_IF: STD: RX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6[0m
+[0;32mI (1722) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3[0m
+[0;32mI (1722) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6[0m
+[0;32mI (1737) Adev_Codec: Open codec device OK[0m
+[0;32mI (1737) I2S_IF: Current mode(playback) and peer mode have same sample_rate 16000, channel 2, bits_per_sample 16[0m
+[0;32mI (1738) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: STEREO, slot_mask: 0x3[0m
+[0;32mI (1738) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6[0m
+[0;32mI (1754) Adev_Codec: Open codec device OK[0m
+[0;32mI (1754) bsp_extra_board: Setting volume: 80[0m
+[0;32mI (1754) Main: [main.cpp:0065](app_main): Display ESP-Brookesia phone demo[0m
+[0;32mI (1755) esp_lvgl:adapter: LVGL adapter initialized successfully[0m
+[0;32mI (1755) ESP32-S3-Touch-AMOLED-1.8: Power and reset AMOLED panel through TCAL9534[0m
+[0;32mI (1966) ESP32-S3-Touch-AMOLED-1.8: Initialize SPI bus[0m
+[0;32mI (1966) co5300: version: 2.0.3[0m
+[0;32mI (1966) co5300_spi: LCD panel create success, version: 2.0.3[0m
+[0;33mW (1967) co5300_spi: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (3167) ESP32-S3-Touch-AMOLED-1.8: CO5300 panel initialized[0m
+[0;32mI (3169) ESP32-S3-Touch-AMOLED-1.8: Set display rotation: 0 (MADCTL=0x00)[0m
+[0;32mI (3169) CST816S: Read ID disabled[0m
+[0;32mI (3170) esp_lvgl:touch: Touch input device registered successfully (IRQ mode: enabled)[0m
+[0;32mI (3170) esp_lvgl:adapter: LVGL task started successfully[0m
+[0;32mI (3170) ESP32-S3-Touch-AMOLED-1.8: Backlight off[0m
+[0;33mW (3192) BS:Phone: [esp_brookesia_phone.cpp:0049](begin): No phone stylesheet is added, adding default dark stylesheet(Default Dark)[0m
+[0;33mW (3192) BS:Core: [esp_brookesia_base_context.cpp:0051](getDisplaySize): Display is not set, use default display[0m
+[0;33mW (3193) BS:Phone: [esp_brookesia_phone.cpp:0060](begin): No phone stylesheet is activated, try to find first stylesheet with display size(368x448)[0m
+[0;32mI (3193) BS:Core: [esp_brookesia_base_context.cpp:0189](begin): Library version: 0.6.0[0m
+[0;33mW (3237) BS:Phone: [esp_brookesia_phone_manager.cpp:0064](begin): No touch device is set, try to use default touch device[0m
+[0;33mW (3237) BS:Phone: [esp_brookesia_phone_manager.cpp:0068](begin): Using default touch device(@0x0x3c45f71c)[0m
+[0;32mI (3240) BS:Core: [esp_brookesia_base_manager.cpp:0149](operator()): Found app: Squareline[0m
+[0;32mI (3241) BS:Core: [esp_brookesia_base_manager.cpp:0156](operator()): 	 - Get instance(0x3c47bde8) success[0m
+[0;32mI (3241) BS:Core: [esp_brookesia_base_manager.cpp:0195](installAppFromRegistry): Install app: Squareline[0m
+[0;32mI (3248) BS:Core: [esp_brookesia_base_manager.cpp:0201](installAppFromRegistry): 	 - Install success (id: 3)[0m
+[0;32mI (3256) QMI8658: QMI8658 initialized successfully[0m
+[1;31mE (3257) gpio: gpio_install_isr_service(537): GPIO isr service already installed[0m
+[1;31mE (3308) sdmmc_common: sdmmc_init_ocr: send_op_cond (1) returned 0x107[0m
+[1;31mE (3308) vfs_fat_sdmmc: sdmmc_card_init failed (0x107).[0m
+[1;31mE (3309) ESP32-S3-Touch-AMOLED-1.8: Failed to mount SD card (ESP_ERR_TIMEOUT)[0m
+[1;31mE (3309) BS:VideoPlayer: Failed to mount SD card[0m
+[0;32mI (3311) ESP32-S3-Touch-AMOLED-1.8: Backlight on[0m
+[0;32mI (3312) Main: [main.cpp:0191](operator()): [0m
+	           Biggest /     Free /    Total
+	  SRAM : [  139264 /   187619 /   251787]
+	 PSRAM : [ 3604480 /  3648212 /  3837892]
+[0;32mI (3313) main_task: Returned from app_main()[0m
+[0;32mI (8364) Main: [main.cpp:0191](operator()): [0m
+	           Biggest /     Free /    Total
+	  SRAM : [  139264 /   188439 /   251787]
+	 PSRAM : [ 3604480 /  3648268 /  3837892]
+[0;32mI (13367) Main: [main.cpp:0191](operator()): [0m
+	           Biggest /     Free /    Total
+	  SRAM : [  139264 /   188439 /   251787]
+	 PSRAM : [ 3604480 /  3648268 /  3837892]
+[0;32mI (18370) Main: [main.cpp:0191](operator()): [0m
+	           Biggest /     Free /    Total
+	  SRAM : [  139264 /   188439 /   251787]
+	 PSRAM : [ 3604480 /  3648268 /  3837892]

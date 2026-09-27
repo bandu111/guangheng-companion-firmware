@@ -1,0 +1,9 @@
+
+
+# Load bootloader symbols
+set confirm off
+    # Bootloader elf was not found
+set confirm on
+
+# Load application symbols
+file D:/ESPProject/guangheng_energy_companion/build-g2/bootloader/bootloader.elf

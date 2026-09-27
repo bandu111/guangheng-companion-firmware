@@ -1,0 +1,68 @@
+I (26315) gh_imu: ESP32-S3 Lift transition IDLE -> STATIONARY acI (35175) gh_imu: ESP32-S3 Lift transition COOLDOWN -> IDLE accel_mag=10.46 gyro_mag=137.91 angle_delta=35.8
+I (37431) gh_imu: ESP32-S3 Lift transition IDLE -> STATIONARY accel_mag=10.47 gyro_mag=9.63 angle_delta=0.0
+I (41156) gh_ui: ESP32-S3 UI route=AMBIENT canvas=368x448
+I (41156) gh_app: ESP32-S3 Explain timeout -> Ambient
+I (42354) gh_imu: ESP32-S3 Lift transition STATIONARY -> MOVING accel_mag=10.57 gyro_mag=41.63 angle_delta=2.4
+I (42930) gh_ui: ESP32-S3 touch swipe origin=AMBIENT dx=0 dy=-10
+I (43421) gh_imu: ESP32-S3 Lift transition MOVING -> LIFT_CANDIDATE accel_mag=10.09 gyro_mag=25.99 angle_delta=24.5
+I (43873) gh_imu: ESP32-S3 Lift transition LIFT_CANDIDATE -> MOVING accel_mag=10.09 gyro_mag=34.62 angle_delta=29.7
+I (43956) gh_imu: ESP32-S3 Lift transition MOVING -> LIFT_CANDIDATE accel_mag=10.18 gyro_mag=28.23 angle_delta=30.9
+I (44531) gh_imu: ESP32-S3 Lift transition LIFT_CANDIDATE -> READABLE accel_mag=10.18 gyro_mag=2.32 angle_delta=32.3
+I (44573) gh_imu: ESP32-S3 Lift transition READABLE -> COOLDOWN accel_mag=10.20 gyro_mag=3.18 angle_delta=32.3
+I (44574) gh_imu: ESP32-S3 Hardware-in-the-loop | ESP32-S3 Lift Event | PASS | count=3 timestamp_ms=43299
+I (44586) gh_ui: ESP32-S3 UI route=EXPLAIN canvas=368x448
+I (44587) gh_app: ESP32-S3 Lift Event -> Model -> UI before=5 after=6 timestamp_ms=43299 approval=false
+I (48006) esp-x509-crt-bundle: Certificate validated
+I (48603) gh_imu: ESP32-S3 Lift transition COOLDOWN -> IDLE accel_mag=10.48 gyro_mag=9.90 angle_delta=7.3
+I (48774) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+I (48776) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false
+I (53404) gh_imu: ESP32-S3 Lift transition IDLE -> STATIONARY accel_mag=10.42 gyro_mag=6.79 angle_delta=0.0
+I (54591) gh_ui: ESP32-S3 UI route=AMBIENT canvas=368x448
+I (54591) gh_app: ESP32-S3 Explain timeout -> Ambient
+I (54908) gh_ui: ESP32-S3 touch swipe origin=AMBIENT dx=0 dy=0
+I (55784) gh_ui: ESP32-S3 touch swipe origin=AMBIENT dx=220 dy=12
+I (55786) gh_ui: ESP32-S3 UI route=DEVICE_STATUS canvas=368x448
+I (56680) gh_ui: ESP32-S3 touch swipe origin=DEVICE_STATUS dx=-82 dy=3
+I (56681) gh_ui: ESP32-S3 UI route=AMBIENT canvas=368x448
+I (57287) gh_imu: ESP32-S3 Lift transition STATIONARY -> MOVING accel_mag=10.44 gyro_mag=57.14 angle_delta=2.1
+I (58887) gh_imu: ESP32-S3 Lift transition MOVING -> LIFT_CANDIDATE accel_mag=10.53 gyro_mag=31.64 angle_delta=34.8
+I (58929) gh_imu: ESP32-S3 Lift transition LIFT_CANDIDATE -> MOVING accel_mag=10.55 gyro_mag=49.14 angle_delta=35.0
+I (59381) gh_imu: ESP32-S3 Lift transition MOVING -> LIFT_CANDIDATE accel_mag=10.57 gyro_mag=31.25 angle_delta=29.3
+I (59423) gh_imu: ESP32-S3 Lift transition LIFT_CANDIDATE -> MOVING accel_mag=10.58 gyro_mag=33.05 angle_delta=28.7
+I (59465) gh_imu: ESP32-S3 Lift transition MOVING -> LIFT_CANDIDATE accel_mag=10.62 gyro_mag=31.49 angle_delta=27.8
+I (59671) gh_imu: ESP32-S3 Lift transition LIFT_CANDIDATE -> MOVING accel_mag=10.74 gyro_mag=60.54 angle_delta=26.9
+I (59918) gh_imu: ESP32-S3 Lift transition MOVING -> LIFT_CANDIDATE accel_mag=10.51 gyro_mag=23.59 angle_delta=32.2
+I (60001) gh_imu: ESP32-S3 Lift transition LIFT_CANDIDATE -> MOVING accel_mag=10.65 gyro_mag=52.82 angle_delta=33.9
+I (60166) gh_imu: ESP32-S3 Lift transition MOVING -> LIFT_CANDIDATE accel_mag=10.50 gyro_mag=22.21 angle_delta=40.0
+I (60290) gh_imu: ESP32-S3 Lift transition LIFT_CANDIDATE -> MOVING accel_mag=10.34 gyro_mag=76.82 angle_delta=41.4
+I (62505) gh_imu: ESP32-S3 Lift transition MOVING -> LIFT_CANDIDATE accel_mag=10.41 gyro_mag=27.14 angle_delta=30.2
+I (62547) gh_imu: ESP32-S3 Lift transition LIFT_CANDIDATE -> MOVING accel_mag=10.48 gyro_mag=51.01 angle_delta=30.2
+I (63122) gh_imu: ESP32-S3 Lift transition MOVING -> LIFT_CANDIDATE accel_mag=10.46 gyro_mag=20.23 angle_delta=44.4
+I (63246) gh_imu: ESP32-S3 Lift transition LIFT_CANDIDATE -> MOVING accel_mag=10.35 gyro_mag=75.68 angle_delta=44.9
+I (63493) gh_imu: ESP32-S3 Lift transition MOVING -> LIFT_CANDIDATE accel_mag=10.60 gyro_mag=16.45 angle_delta=35.3
+I (63617) gh_imu: ESP32-S3 Lift transition LIFT_CANDIDATE -> MOVING accel_mag=10.59 gyro_mag=33.05 angle_delta=34.6
+I (63782) gh_imu: ESP32-S3 Lift transition MOVING -> LIFT_CANDIDATE accel_mag=10.52 gyro_mag=25.00 angle_delta=39.0
+I (64152) gh_imu: ESP32-S3 Lift transition LIFT_CANDIDATE -> READABLE accel_mag=10.57 gyro_mag=7.36 angle_delta=40.1
+I (64194) gh_imu: ESP32-S3 Lift transition READABLE -> COOLDOWN accel_mag=10.57 gyro_mag=7.52 angle_delta=40.2
+I (64195) gh_imu: ESP32-S3 Hardware-in-the-loop | ESP32-S3 Lift Event | PASS | count=4 timestamp_ms=62920
+I (64216) gh_ui: ESP32-S3 UI route=EXPLAIN canvas=368x448
+I (64217) gh_app: ESP32-S3 Lift Event -> Model -> UI before=5 after=6 timestamp_ms=62920 approval=false
+I (65681) esp-x509-crt-bundle: Certificate validated
+I (66486) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+I (66488) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false
+I (68224) gh_imu: ESP32-S3 Lift transition COOLDOWN -> IDLE accel_mag=10.57 gyro_mag=8.15 angle_delta=40.3
+I (68963) gh_imu: ESP32-S3 Lift transition IDLE -> STATIONARY accel_mag=10.57 gyro_mag=8.17 angle_delta=0.0
+I (72654) gh_imu: ESP32-S3 Lift transition STATIONARY -> MOVING accel_mag=10.36 gyro_mag=45.67 angle_delta=0.5
+I (72668) gh_ui: ESP32-S3 UI route=AMBIENT canvas=368x448
+I (74220) gh_app: ESP32-S3 Explain timeout -> Ambient
+I (75484) gh_imu: ESP32-S3 Lift transition MOVING -> IDLE accel_mag=10.56 gyro_mag=8.52 angle_delta=1.7
+I (76223) gh_imu: ESP32-S3 Lift transition IDLE -> STATIONARY accel_mag=10.56 gyro_mag=8.64 angle_delta=0.0
+I (83218) esp-x509-crt-bundle: Certificate validated
+I (83996) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+I (83997) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false
+I (100729) esp-x509-crt-bundle: Certificate validated
+I (101506) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+I (101508) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false
+I (118246) esp-x509-crt-bundle: Certificate validated
+I (119020) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+I (119022) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false

@@ -1,0 +1,3 @@
+Command: D:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -m esptool --chip esp32s3 merge_bin -o build-g2/guangheng_energy_companion_g2_factory.bin -f raw @flash_args
+esptool.py --chip esp32s3 merge_bin -o build-g2/guangheng_energy_companion_g2_factory.bin -f raw --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x20000 guangheng_energy_companion.bin 0x8000 partition_table/partition-table.bin 0xf000 ota_data_initial.bin
+esptool.py v4.12.0

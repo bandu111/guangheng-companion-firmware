@@ -1,0 +1,4 @@
+D:\ESPProject\guangheng_energy_companion\tests\gh_model_test.c;D:\ESPProject\guangheng_energy_companion\build-host\gh_model_tests.dir\Debug\gh_model_test.obj
+D:\ESPProject\guangheng_energy_companion\main\gh_model.c;D:\ESPProject\guangheng_energy_companion\build-host\gh_model_tests.dir\Debug\gh_model.obj
+D:\ESPProject\guangheng_energy_companion\main\gh_snapshot_parser.c;D:\ESPProject\guangheng_energy_companion\build-host\gh_model_tests.dir\Debug\gh_snapshot_parser.obj
+D:\Espressif\frameworks\esp-idf-v5.5.5\components\json\cJSON\cJSON.c;D:\ESPProject\guangheng_energy_companion\build-host\gh_model_tests.dir\Debug\cJSON.obj

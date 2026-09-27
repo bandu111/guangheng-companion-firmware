@@ -1,0 +1,55 @@
+Command: ninja all
+[1/21] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_main.c.obj
+[2/21] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gh_model.c.obj
+[3/21] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gh_hall.c.obj
+[4/21] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\ESPProject\guangheng_energy_companion\build\bootloader\esp-idf\esptool_py && D:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 D:/ESPProject/guangheng_energy_companion/build/bootloader/bootloader.bin"
+Bootloader binary size 0x5160 bytes. 0x2ea0 bytes (36%) free.
+[5/21] No install step for 'bootloader'
+[6/21] Completed 'bootloader'
+[7/21] Building C object esp-idf/waveshare__qmi8658/CMakeFiles/__idf_waveshare__qmi8658.dir/qmi8658.c.obj
+[8/21] Building C object esp-idf/waveshare__pcf85063a/CMakeFiles/__idf_waveshare__pcf85063a.dir/pcf85063a.c.obj
+[9/21] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gh_ui.c.obj
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c: In function 'make_card':
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:73:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+   73 |     lv_obj_clear_flag(card, LV_OBJ_FLAG_SCROLLABLE);
+      |     ^~~~~~~~~~~~~~~~~
+In file included from D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/lvgl.h:21,
+                 from D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/lvgl.h:1,
+                 from D:/ESPProject/guangheng_energy_companion/managed_components/waveshare__esp32_s3_touch_amoled_1_8/include/bsp/esp32_s3_touch_amoled_1_8.h:14,
+                 from D:/ESPProject/guangheng_energy_companion/managed_components/waveshare__esp32_s3_touch_amoled_1_8/include/bsp/esp-bsp.h:2,
+                 from D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:6:
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c: In function 'create_ui':
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:106:5: warning: 'lv_obj_remove_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, false). [-Wdeprecated-declarations]
+  106 |     lv_obj_clear_flag(screen, LV_OBJ_FLAG_SCROLLABLE);
+      |     ^~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:248:6: note: declared here
+  248 | void lv_obj_remove_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/main/gh_ui.c:107:5: warning: 'lv_obj_add_flag' is deprecated: Use the dedicated lv_obj_set_<flag>() setters instead, e.g. lv_obj_set_hidden(obj, true). [-Wdeprecated-declarations]
+  107 |     lv_obj_add_flag(screen, LV_OBJ_FLAG_CLICKABLE);
+      |     ^~~~~~~~~~~~~~~
+D:/ESPProject/guangheng_energy_companion/managed_components/lvgl__lvgl/include/lvgl/core/lv_obj.h:239:6: note: declared here
+  239 | void lv_obj_add_flag(lv_obj_t * obj, lv_obj_flag_t f);
+      |      ^~~~~~~~~~~~~~~
+[10/21] Linking C static library esp-idf\waveshare__qmi8658\libwaveshare__qmi8658.a
+[11/21] Linking C static library esp-idf\waveshare__pcf85063a\libwaveshare__pcf85063a.a
+[12/21] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gh_backend.c.obj
+[13/21] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gh_hardware.c.obj
+[14/21] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gh_app.c.obj
+[15/21] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gh_peripherals.c.obj
+[16/21] Linking C static library esp-idf\main\libmain.a
+[17/21] Generating esp-idf/esp_system/ld/sections.ld
+[18/21] Building C object CMakeFiles/guangheng_energy_companion.elf.dir/project_elf_src_esp32s3.c.obj
+[19/21] Linking CXX executable guangheng_energy_companion.elf
+[20/21] Generating binary image from built executable
+esptool.py v4.12.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/ESPProject/guangheng_energy_companion/build/guangheng_energy_companion.bin
+[21/21] C:\WINDOWS\system32\cmd.exe /C "cd /D D:\ESPProject\guangheng_energy_companion\build\esp-idf\esptool_py && D:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/ESPProject/guangheng_energy_companion/build/partition_table/partition-table.bin D:/ESPProject/guangheng_energy_companion/build/guangheng_energy_companion.bin"
+guangheng_energy_companion.bin binary size 0x11d760 bytes. Smallest app partition is 0x600000 bytes. 0x4e28a0 bytes (81%) free.

@@ -1,0 +1,2 @@
+anker_solix_123DMY64567890123 | Anker SOLIX Solarbank Max | source_mode=simulator | control_enabled=True
+anker_solix_123DNMS4567890123 | Anker SOLIX XE AC | source_mode=simulator | control_enabled=True

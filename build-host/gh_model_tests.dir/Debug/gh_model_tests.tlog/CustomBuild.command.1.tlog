@@ -1,0 +1,10 @@
+^D:\ESPPROJECT\GUANGHENG_ENERGY_COMPANION\TESTS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/ESPProject/guangheng_energy_companion/tests -BD:/ESPProject/guangheng_energy_companion/build-host --check-stamp-file D:/ESPProject/guangheng_energy_companion/build-host/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

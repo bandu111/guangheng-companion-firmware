@@ -1,0 +1,14 @@
+I (95) boot:  6 coredump         Unknown data     01 03 00ff0000I (12828) esp-x509-crt-bundle: Certificate validated
+I (13648) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+I (13650) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false
+I (13659) gh_ui: ESP32-S3 UI route=AMBIENT canvas=368x448
+I (30414) esp-x509-crt-bundle: Certificate validated
+I (31195) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+I (31197) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false
+I (47960) esp-x509-crt-bundle: Certificate validated
+I (48716) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+I (48718) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false
+I (58770) gh_ui: ESP32-S3 touch swipe origin=AMBIENT dx=30 dy=-35
+I (65482) esp-x509-crt-bundle: Certificate validated
+I (66225) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200
+I (66227) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false

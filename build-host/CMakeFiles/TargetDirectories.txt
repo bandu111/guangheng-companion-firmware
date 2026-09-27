@@ -1,0 +1,4 @@
+D:/ESPProject/guangheng_energy_companion/build-host/CMakeFiles/gh_model_tests.dir
+D:/ESPProject/guangheng_energy_companion/build-host/CMakeFiles/RUN_TESTS.dir
+D:/ESPProject/guangheng_energy_companion/build-host/CMakeFiles/ALL_BUILD.dir
+D:/ESPProject/guangheng_energy_companion/build-host/CMakeFiles/ZERO_CHECK.dir

@@ -1,0 +1,374 @@
+Command: D:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe D:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM10 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\ESPProject\guangheng_energy_companion\build-g2\guangheng_energy_companion.elf D:\ESPProject\guangheng_energy_companion\build-g2\bootloader\bootloader.elf --force-color -m 'D:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'D:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py' '-B' 'build-g2' '-p' 'COM10'
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038143a
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xd24
+load:0x403cb700,len:0x2eec
+entry 0x403c8924
+[0;32mI (24) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Sep 26 2026 01:53:03[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.4[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (69) boot:  2 phy_init         RF data          01 01 00011000 00001000[0m
+[0;32mI (76) boot:  3 ota_0            OTA app          00 10 00020000 00600000[0m
+[0;32mI (82) boot:  4 ota_1            OTA app          00 11 00620000 00600000[0m
+[0;32mI (89) boot:  5 storage          Unknown data     01 82 00c20000 003d0000[0m
+[0;32mI (95) boot:  6 coredump         Unknown data     01 03 00ff0000 00010000[0m
+[0;32mI (102) boot: End of partition table[0m
+[0;32mI (105) esp_image: segment 0: paddr=00020020 vaddr=3c140020 size=1ad54ch (1758540) map[0m
+[0;32mI (433) esp_image: segment 1: paddr=001cd574 vaddr=3fca3b00 size=02aa4h ( 10916) load[0m
+[0;32mI (436) esp_image: segment 2: paddr=001d0020 vaddr=42000020 size=13b280h (1290880) map[0m
+[0;32mI (673) esp_image: segment 3: paddr=0030b2a8 vaddr=3fca65a4 size=0300ch ( 12300) load[0m
+[0;32mI (676) esp_image: segment 4: paddr=0030e2bc vaddr=40374000 size=1fa80h (129664) load[0m
+[0;32mI (706) esp_image: segment 5: paddr=0032dd44 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (719) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (719) boot: Disabling RNG early entropy source...[0m
+[0;32mI (729) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (729) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (730) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (731) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (736) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (740) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (744) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (749) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (754) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (758) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (764) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (768) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (773) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (776) esp_psram: Speed: 80MHz[0m
+[0;32mI (779) cpu_start: Multicore app[0m
+[0;32mI (1195) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1203) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (1204) cpu_start: Pro cpu start user code[0m
+[0;32mI (1204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1206) app_init: Application information:[0m
+[0;32mI (1209) app_init: Project name:     guangheng_energy_companion[0m
+[0;32mI (1215) app_init: App version:      1[0m
+[0;32mI (1219) app_init: Compile time:     Sep 26 2026 01:51:12[0m
+[0;32mI (1224) app_init: ELF file SHA256:  16aafec8e...[0m
+[0;32mI (1228) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1232) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1236) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1240) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1244) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1250) heap_init: At 3FCBEAF8 len 0002AC18 (171 KiB): RAM[0m
+[0;32mI (1256) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1261) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1266) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1272) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1279) spi_flash: detected chip: generic[0m
+[0;32mI (1282) spi_flash: flash io: dio[0m
+[0;32mI (1285) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1291) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1307) main_task: Started on CPU0[0m
+[0;32mI (1310) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1318) main_task: Calling app_main()[0m
+[0;32mI (1321) gh_hardware: ESP32-S3 Hardware-in-the-loop | ESP32-S3 Detected | PASS | model=ESP32-S3 revision=0.2 cores=2[0m
+[0;32mI (1332) gh_hardware: ESP32-S3 Hardware-in-the-loop | ESP32-S3 Flash | PASS | size=16777216 bytes (16 MB)[0m
+[0;32mI (1341) gh_hardware: ESP32-S3 Hardware-in-the-loop | ESP32-S3 PSRAM | PASS | size=8388608 bytes (8 MB)[0m
+[0;32mI (1350) gh_hardware: ESP32-S3 Hardware-in-the-loop | ESP32-S3 MAC | PASS | 90:70:69:FE:A9:3C[0m
+[0;32mI (1381) gh_main: Starting GuangHeng Energy Companion on Waveshare ESP32-S3-Touch-AMOLED-1.8[0m
+[0;32mI (1384) LVGL: Starting LVGL task[0m
+[0;32mI (1384) ESP32-S3-Touch-AMOLED-1.8: Initialize SPI bus[0m
+[0;32mI (1387) co5300: version: 2.2.0[0m
+[0;32mI (1389) co5300_spi: LCD panel create success, version: 2.2.0[0m
+[0;33mW (1475) co5300_spi: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (1623) i2c.master: Please check pull-up resistances whether be connected properly. Otherwise unexpected behavior would happen. For more detailed information, please read docs[0m
+[0;32mI (1629) ESP32-S3-Touch-AMOLED-1.8: Touch CST816S 0x15 found[0m
+[0;32mI (1634) CST816S: IC id: 183[0m
+[0;32mI (1637) gh_hardware: ESP32-S3 Hardware-in-the-loop | Board Variant Signal | PASS | touch=CST816S (V2-family signal); physical PCB revision label still required[0m
+[0;32mI (2157) gh_ui: ESP32-S3 Hardware-in-the-loop | ESP32-S3 AMOLED First Frame | PASS | controller=CO5300 brightness=100[0m
+[0;32mI (2177) QMI8658: QMI8658 initialized successfully[0m
+[0;32mI (2300) gh_peripherals: ESP32-S3 Hardware-in-the-loop | ESP32-S3 QMI8658 Read | PASS | address=0x6B who_am_i=0x05 accel=-0.036,0.977,-10.543 gyro=6.531,3.992,4.156 temp=38.51 timestamp=9[0m
+[0;32mI (2306) gh_peripherals: ESP32-S3 Hardware-in-the-loop | ESP32-S3 AXP2101 Read | PASS | address=0x34 chip_id=0x4A mode=read-only[0m
+[0;32mI (2317) PCF85063A: PCF85063A initialized successfully[0m
+[0;32mI (3422) gh_peripherals: ESP32-S3 Hardware-in-the-loop | ESP32-S3 PCF85063 Read | PASS | address=0x51 time=1970-01-10T00:07:45 ticking=true[0m
+[0;32mI (3432) ES8311: Work in Slave mode[0m
+[1;31mE (3435) i2s_common: i2s_channel_disable(1262): the channel has not been enabled yet[0m
+[1;31mE (3436) i2s_common: i2s_channel_disable(1262): the channel has not been enabled yet[0m
+[0;32mI (3442) I2S_IF: STD: TX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1[0m
+[0;32mI (3450) I2S_IF: STD: TX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6[0m
+[0;32mI (3457) I2S_IF: STD: RX, data_bit: 16, slot_bit: 16, ws_width: 16, slot_mode: MONO, slot_mask: 0x1[0m
+[0;32mI (3466) I2S_IF: STD: RX, sample_rate_hz: 16000, mclk_multiple: 256, clk_src: 6[0m
+[0;32mI (3491) Adev_Codec: Open codec device OK[0m
+[0;32mI (3492) gh_audio: ESP32-S3 Hardware-in-the-loop | ESP32-S3 ES8311 Codec | PASS | address=0x30 sample_rate=16000 mode=full-duplex[0m
+[0;32mI (4493) gh_audio: ESP32-S3 Hardware-in-the-loop | ESP32-S3 Board Microphone Capture | PASS | samples=16128 min=-32768 max=29545 span=62313 mean_absolute=15618[0m
+[0;32mI (4496) gh_audio: ESP32-S3 Hardware-in-the-loop | ESP32-S3 Board Speaker Stream | PASS | frequency=880Hz volume=45 bytes=32256 audible_confirmation=pending[0m
+[0;32mI (4512) pp: pp rom version: e7ae62f[0m
+[0;32mI (4514) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (4519) wifi:wifi driver task: 3fcd5a0c, prio:23, stack:6656, core=0[0m
+[0;32mI (4534) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (4534) wifi:wifi certification version: v7.0[0m
+[0;32mI (4534) wifi:config NVS flash: enabled[0m
+[0;32mI (4536) wifi:config nano formatting: disabled[0m
+[0;32mI (4540) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (4545) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (4549) wifi:Init management short buffer num: 32[0m
+[0;32mI (4554) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (4558) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (4562) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (4566) wifi:Init static rx buffer num: 10[0m
+[0;32mI (4570) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (4575) wifi_init: rx ba win: 6[0m
+[0;32mI (4577) wifi_init: accept mbox: 6[0m
+[0;32mI (4580) wifi_init: tcpip mbox: 32[0m
+[0;32mI (4583) wifi_init: udp mbox: 6[0m
+[0;32mI (4586) wifi_init: tcp mbox: 6[0m
+[0;32mI (4589) wifi_init: tcp tx win: 5760[0m
+[0;32mI (4592) wifi_init: tcp rx win: 5760[0m
+[0;32mI (4595) wifi_init: tcp mss: 1440[0m
+[0;32mI (4598) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (4602) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (4608) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (4650) wifi:mode : sta (90:70:69:fe:a9:3c)[0m
+[0;32mI (4650) wifi:enable tsf[0m
+[0;32mI (4652) BLE_INIT: BT controller compile version [51d9dfd][0m
+[0;32mI (4655) BLE_INIT: Using main XTAL as clock source[0m
+[0;32mI (4655) BLE_INIT: Feature Config, ADV:1, BLE_50:1, DTM:1, SCAN:1, CCA:0, SMP:1, CONNECT:1[0m
+[0;32mI (4662) wifi:new:<8,2>, old:<1,0>, ap:<255,255>, sta:<8,2>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4671) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (4676) BLE_INIT: Bluetooth MAC: 90:70:69:fe:a9:3e[0m
+[0;32mI (4698) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (4699) NimBLE: GAP procedure initiated: stop advertising.[0m
+
+[0;32mI (4700) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (4705) NimBLE: GAP procedure initiated: advertise; [0m
+[0;32mI (4706) NimBLE: disc_mode=2[0m
+[0;32mI (4709) NimBLE:  adv_channel_map=0 own_addr_type=0 adv_filter_policy=0 adv_itvl_min=0 adv_itvl_max=0[0m
+[0;32mI (4718) NimBLE: [0m
+
+[0;32mI (4721) gh_ble: ESP32-S3 encrypted BLE provisioning available[0m
+[0;32mI (4726) main_task: Returned from app_main()[0m
+[0;32mI (4729) wifi:I (4727) gh_app: ESP32-S3 Hardware-in-the-loop | ESP32-S3 AXP2101 Runtime Power | PASS | present=false percentage=unavailable voltage=unavailable charging=false[0m
+state: assoc -> run (0x10)
+[0;32mI (4885) wifi:connected with 607, aid = 21, channel 8, 40D, bssid = 34:f7:16:a6:36:ea[0m
+[0;32mI (4886) wifi:security: WPA2-PSK, phy: bgn, rssi: -71, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (4893) wifi:pm start, type: 1[0m
+
+[0;32mI (4894) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (4901) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (4953) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;33mW (5745) gh_app: Secure network not ready: ESP_ERR_TIMEOUT[0m
+[0;33mW (5745) gh_app: ESP32-S3 snapshot stale=true last_successful_sync_at=0[0m
+[0;32mI (6185) wifi:<ba-add>idx:0 (ifx:0, 34:f7:16:a6:36:ea), tid:0, ssn:4, winSize:64[0m
+[0;32mI (6264) esp_netif_handlers: sta ip: 192.168.2.9, mask: 255.255.255.0, gw: 192.168.2.1[0m
+[0;32mI (6265) gh_app: ESP32-S3 Wi-Fi connected; IPv4=192.168.2.9[0m
+[0;32mI (10748) gh_app: ESP32-S3 SNTP time ready; UTC=2026-09-25T17:55:41Z[0m
+[0;32mI (12516) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (13365) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200[0m
+[0;32mI (13371) gh_backend: ESP32-S3 pending Action Set parsed; action_set_id=3 proposal_id=36 actions=4 status=PENDING expired=false[0m
+[0;32mI (13374) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false[0m
+[1;31mE (18475) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (18476) esp-tls: create_ssl_handle failed[0m
+[1;31mE (18476) esp-tls: Failed to open new connection[0m
+[1;31mE (18478) transport_base: Failed to open a new connection[0m
+[1;31mE (18485) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (18488) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (18495) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790358943[0m
+[0;33mW (18503) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (23591) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (23592) esp-tls: create_ssl_handle failed[0m
+[1;31mE (23592) esp-tls: Failed to open new connection[0m
+[1;31mE (23594) transport_base: Failed to open a new connection[0m
+[1;31mE (23601) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (23604) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (23611) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790358943[0m
+[0;33mW (23619) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (30341) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (31183) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200[0m
+[0;32mI (31188) gh_backend: ESP32-S3 pending Action Set parsed; action_set_id=3 proposal_id=36 actions=4 status=PENDING expired=false[0m
+[0;32mI (31192) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false[0m
+[1;31mE (36294) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (36294) esp-tls: create_ssl_handle failed[0m
+[1;31mE (36295) esp-tls: Failed to open new connection[0m
+[1;31mE (36297) transport_base: Failed to open a new connection[0m
+[1;31mE (36303) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (36307) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (36314) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790358961[0m
+[0;33mW (36321) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (41409) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (41410) esp-tls: create_ssl_handle failed[0m
+[1;31mE (41410) esp-tls: Failed to open new connection[0m
+[1;31mE (41412) transport_base: Failed to open a new connection[0m
+[1;31mE (41419) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (41422) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (41429) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790358961[0m
+[0;33mW (41437) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (48220) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (49110) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200[0m
+[0;32mI (49115) gh_backend: ESP32-S3 pending Action Set parsed; action_set_id=3 proposal_id=36 actions=4 status=PENDING expired=false[0m
+[0;32mI (49119) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false[0m
+[1;31mE (54215) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (54215) esp-tls: create_ssl_handle failed[0m
+[1;31mE (54215) esp-tls: Failed to open new connection[0m
+[1;31mE (54218) transport_base: Failed to open a new connection[0m
+[1;31mE (54224) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (54228) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (54235) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790358979[0m
+[0;33mW (54242) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (59330) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (59331) esp-tls: create_ssl_handle failed[0m
+[1;31mE (59331) esp-tls: Failed to open new connection[0m
+[1;31mE (59333) transport_base: Failed to open a new connection[0m
+[1;31mE (59340) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (59343) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (59350) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790358979[0m
+[0;33mW (59358) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (66075) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (66930) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200[0m
+[0;32mI (66936) gh_backend: ESP32-S3 pending Action Set parsed; action_set_id=3 proposal_id=36 actions=4 status=PENDING expired=false[0m
+[0;32mI (66940) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false[0m
+[1;31mE (72028) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (72029) esp-tls: create_ssl_handle failed[0m
+[1;31mE (72030) esp-tls: Failed to open new connection[0m
+[1;31mE (72032) transport_base: Failed to open a new connection[0m
+[1;31mE (72038) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (72042) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (72049) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790358997[0m
+[0;33mW (72056) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (77148) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (77149) esp-tls: create_ssl_handle failed[0m
+[1;31mE (77150) esp-tls: Failed to open new connection[0m
+[1;31mE (77152) transport_base: Failed to open a new connection[0m
+[1;31mE (77158) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (77162) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (77169) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790358997[0m
+[0;33mW (77176) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (83893) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (84737) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200[0m
+[0;32mI (84742) gh_backend: ESP32-S3 pending Action Set parsed; action_set_id=3 proposal_id=36 actions=4 status=PENDING expired=false[0m
+[0;32mI (84746) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false[0m
+[1;31mE (89851) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (89852) esp-tls: create_ssl_handle failed[0m
+[1;31mE (89852) esp-tls: Failed to open new connection[0m
+[1;31mE (89855) transport_base: Failed to open a new connection[0m
+[1;31mE (89861) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (89865) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (89872) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790359015[0m
+[0;33mW (89879) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (94967) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (94968) esp-tls: create_ssl_handle failed[0m
+[1;31mE (94968) esp-tls: Failed to open new connection[0m
+[1;31mE (94970) transport_base: Failed to open a new connection[0m
+[1;31mE (94976) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (94980) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (94987) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790359015[0m
+[0;33mW (94995) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (101782) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (102667) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200[0m
+[0;32mI (102672) gh_backend: ESP32-S3 pending Action Set parsed; action_set_id=3 proposal_id=36 actions=4 status=PENDING expired=false[0m
+[0;32mI (102676) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false[0m
+[1;31mE (107772) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (107773) esp-tls: create_ssl_handle failed[0m
+[1;31mE (107773) esp-tls: Failed to open new connection[0m
+[1;31mE (107776) transport_base: Failed to open a new connection[0m
+[1;31mE (107782) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (107786) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (107793) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790359032[0m
+[0;33mW (107800) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (112888) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (112889) esp-tls: create_ssl_handle failed[0m
+[1;31mE (112889) esp-tls: Failed to open new connection[0m
+[1;31mE (112891) transport_base: Failed to open a new connection[0m
+[1;31mE (112898) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (112902) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (112909) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790359032[0m
+[0;33mW (112916) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (119746) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (120590) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200[0m
+[0;32mI (120595) gh_backend: ESP32-S3 pending Action Set parsed; action_set_id=3 proposal_id=36 actions=4 status=PENDING expired=false[0m
+[0;32mI (120599) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false[0m
+[1;31mE (125688) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (125689) esp-tls: create_ssl_handle failed[0m
+[1;31mE (125690) esp-tls: Failed to open new connection[0m
+[1;31mE (125692) transport_base: Failed to open a new connection[0m
+[1;31mE (125698) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (125702) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (125709) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790359050[0m
+[0;33mW (125717) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (130816) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (130817) esp-tls: create_ssl_handle failed[0m
+[1;31mE (130817) esp-tls: Failed to open new connection[0m
+[1;31mE (130820) transport_base: Failed to open a new connection[0m
+[1;31mE (130826) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (130830) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (130837) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790359050[0m
+[0;33mW (130845) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (137553) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (138403) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200[0m
+[0;32mI (138409) gh_backend: ESP32-S3 pending Action Set parsed; action_set_id=3 proposal_id=36 actions=4 status=PENDING expired=false[0m
+[0;32mI (138413) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false[0m
+[1;31mE (143512) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (143513) esp-tls: create_ssl_handle failed[0m
+[1;31mE (143513) esp-tls: Failed to open new connection[0m
+[1;31mE (143515) transport_base: Failed to open a new connection[0m
+[1;31mE (143522) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (143526) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (143533) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790359068[0m
+[0;33mW (143540) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (148627) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (148628) esp-tls: create_ssl_handle failed[0m
+[1;31mE (148628) esp-tls: Failed to open new connection[0m
+[1;31mE (148630) transport_base: Failed to open a new connection[0m
+[1;31mE (148637) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (148641) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (148648) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790359068[0m
+[0;33mW (148655) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (155375) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (156250) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200[0m
+[0;32mI (156256) gh_backend: ESP32-S3 pending Action Set parsed; action_set_id=3 proposal_id=36 actions=4 status=PENDING expired=false[0m
+[0;32mI (156259) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false[0m
+[1;31mE (161363) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (161364) esp-tls: create_ssl_handle failed[0m
+[1;31mE (161364) esp-tls: Failed to open new connection[0m
+[1;31mE (161366) transport_base: Failed to open a new connection[0m
+[1;31mE (161373) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (161376) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (161383) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790359086[0m
+[0;33mW (161391) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (166484) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (166485) esp-tls: create_ssl_handle failed[0m
+[1;31mE (166485) esp-tls: Failed to open new connection[0m
+[1;31mE (166487) transport_base: Failed to open a new connection[0m
+[1;31mE (166494) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (166498) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (166505) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790359086[0m
+[0;33mW (166512) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (173290) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (174129) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200[0m
+[0;32mI (174135) gh_backend: ESP32-S3 pending Action Set parsed; action_set_id=3 proposal_id=36 actions=4 status=PENDING expired=false[0m
+[0;32mI (174139) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false[0m
+[1;31mE (179251) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (179252) esp-tls: create_ssl_handle failed[0m
+[1;31mE (179252) esp-tls: Failed to open new connection[0m
+[1;31mE (179255) transport_base: Failed to open a new connection[0m
+[1;31mE (179261) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (179265) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (179272) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790359104[0m
+[0;33mW (179280) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[1;31mE (184366) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[1;31mE (184367) esp-tls: create_ssl_handle failed[0m
+[1;31mE (184368) esp-tls: Failed to open new connection[0m
+[1;31mE (184370) transport_base: Failed to open a new connection[0m
+[1;31mE (184376) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (184380) gh_backend: Backend request failed: status=0 error=ESP_ERR_HTTP_CONNECT[0m
+[0;33mW (184387) gh_backend: ESP32-S3 snapshot stale=true last_successful_sync_at=1790359104[0m
+[0;33mW (184395) gh_app: Refresh failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (191178) esp-x509-crt-bundle: Certificate validated[0m
+[0;32mI (192059) gh_backend: ESP32-S3 HTTPS request accepted: GET /api/v1/companion/snapshot status=200[0m
+[0;32mI (192064) gh_backend: ESP32-S3 pending Action Set parsed; action_set_id=3 proposal_id=36 actions=4 status=PENDING expired=false[0m
+[0;32mI (192068) gh_backend: ESP32-S3 backend snapshot received; source_mode=SIMULATOR stale=false[0m

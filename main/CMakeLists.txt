@@ -1,0 +1,41 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "gh_app.c"
+        "gh_model.c"
+        "gh_lift_detector.c"
+        "gh_imu.c"
+        "gh_snapshot_parser.c"
+        "gh_ui.c"
+        "gh_font_chinese_14.c"
+        "gh_font_chinese_16.c"
+        "gh_backend.c"
+        "gh_hall.c"
+        "gh_hardware.c"
+        "gh_peripherals.c"
+        "gh_audio.c"
+        "gh_ble_provisioning.c"
+    INCLUDE_DIRS "include"
+    REQUIRES
+        esp_event
+        esp_driver_i2c
+        esp_driver_i2s
+        esp_http_client
+        esp_hw_support
+        esp_psram
+        spi_flash
+        esp_wifi
+        esp_netif
+        esp_timer
+        json
+        mbedtls
+        nvs_flash
+        bt
+        waveshare__esp32_s3_touch_amoled_1_8
+        waveshare__qmi8658
+        waveshare__pcf85063a
+        espressif__esp_codec_dev
+    PRIV_REQUIRES
+        espressif__esp_lcd_touch_cst816s
+        espressif__esp_lcd_touch_ft5x06
+)
